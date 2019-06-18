@@ -47,6 +47,11 @@ public class OI {
 
         secondaryController.getLeftTriggerButton().whileHeld(new ActuateGathererCommand(mRobot.getGatherer(), true));
         secondaryController.getRightTriggerButton().whileHeld(new ActuateGathererCommand(mRobot.getGatherer(), false));
+
+        // another primaryController
+        // another secondaryController
+
+        
     }
 
     public IGamepad getPrimaryController() {
