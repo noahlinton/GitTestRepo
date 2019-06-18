@@ -26,6 +26,7 @@ public class OI {
     public void registerControls() {
 
         if (true){
+<<<<<<< HEAD
 
 
             primaryController.getLeftBumperButton().whenPressed(new SetFieldOrientedCommand(mRobot.getDrivetrain(), false));
@@ -36,6 +37,18 @@ public class OI {
             primaryController.getBButton().whenPressed(new LaunchCubeCommand(mRobot.getGatherer(), 1, 0.5));
             primaryController.getXButton().whenPressed(new LaunchCubeCommand(mRobot.getGatherer(), 1, 0.75));
             primaryController.getYButton().whenPressed(new LaunchCubeCommand(mRobot.getGatherer(), 1, 1));
+=======
+            if (false){
+        
+                primaryController.getLeftBumperButton().whenPressed(new SetFieldOrientedCommand(mRobot.getDrivetrain(), false));
+                primaryController.getLeftBumperButton().whenReleased(new SetFieldOrientedCommand(mRobot.getDrivetrain(), true));
+                primaryController.getStartButton().whenPressed(new ZeroDrivetrainGyroCommand(mRobot.getDrivetrain()));
+
+                primaryController.getAButton().whileHeld(new SoftCubePlaceCommand(mRobot.getDrivetrain(), mRobot.getGatherer(), SOFT_PLACEMENT_VELOCITY, SOFT_PLACEMENT_ACCELERATION));
+                primaryController.getBButton().whenPressed(new LaunchCubeCommand(mRobot.getGatherer(), 1, 0.5));
+                primaryController.getXButton().whenPressed(new LaunchCubeCommand(mRobot.getGatherer(), 1, 0.75));
+                primaryController.getYButton().whenPressed(new LaunchCubeCommand(mRobot.getGatherer(), 1, 1));
+>>>>>>> 6c885a164b6535c701fd53131a590a2c15b33f0b
 
                 secondaryController.getLeftJoystickButton().whenPressed(new ChangeElevatorModeCommand(mRobot.getElevator(), ElevatorSubsystem.Mode.CLIMBING));
                 secondaryController.getRightJoystickButton().whenPressed(new ChangeElevatorModeCommand(mRobot.getElevator(), ElevatorSubsystem.Mode.REGULAR));
