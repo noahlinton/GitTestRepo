@@ -37,22 +37,24 @@ public class OI {
             primaryController.getXButton().whenPressed(new LaunchCubeCommand(mRobot.getGatherer(), 1, 0.75));
             primaryController.getYButton().whenPressed(new LaunchCubeCommand(mRobot.getGatherer(), 1, 1));
 
-            secondaryController.getLeftJoystickButton().whenPressed(new ChangeElevatorModeCommand(mRobot.getElevator(), ElevatorSubsystem.Mode.CLIMBING));
-            secondaryController.getRightJoystickButton().whenPressed(new ChangeElevatorModeCommand(mRobot.getElevator(), ElevatorSubsystem.Mode.REGULAR));
+                secondaryController.getLeftJoystickButton().whenPressed(new ChangeElevatorModeCommand(mRobot.getElevator(), ElevatorSubsystem.Mode.CLIMBING));
+                secondaryController.getRightJoystickButton().whenPressed(new ChangeElevatorModeCommand(mRobot.getElevator(), ElevatorSubsystem.Mode.REGULAR));
 
-            secondaryController.getLeftBumperButton().whileHeld(new IntakeCubeNoRequireCommand(mRobot.getGatherer(), -0.45, 0, Double.MAX_VALUE));
-            secondaryController.getRightBumperButton().whenPressed(new SetElevatorPositionCommand(mRobot.getElevator(), ElevatorSubsystem.GROUND_POSITION));
+                secondaryController.getLeftBumperButton().whileHeld(new IntakeCubeNoRequireCommand(mRobot.getGatherer(), -0.45, 0, Double.MAX_VALUE));
+                secondaryController.getRightBumperButton().whenPressed(new SetElevatorPositionCommand(mRobot.getElevator(), ElevatorSubsystem.GROUND_POSITION));
 
-            secondaryController.getStartButton().whenPressed(new SetElevatorLockCommand(mRobot.getElevator(), true));
-            secondaryController.getYButton().whenPressed(new SetElevatorLockCommand(mRobot.getElevator(), false));
+                secondaryController.getStartButton().whenPressed(new SetElevatorLockCommand(mRobot.getElevator(), true));
+                secondaryController.getYButton().whenPressed(new SetElevatorLockCommand(mRobot.getElevator(), false));
 
-            secondaryController.getBButton().whenPressed(new SetElevatorPositionCommand(mRobot.getElevator(), ElevatorSubsystem.CLIMB_POSITION));
-            secondaryController.getAButton().whenPressed(new CalibrateElevatorEncoderCommand(mRobot.getElevator()));
+                secondaryController.getBButton().whenPressed(new SetElevatorPositionCommand(mRobot.getElevator(), ElevatorSubsystem.CLIMB_POSITION));
+                secondaryController.getAButton().whenPressed(new CalibrateElevatorEncoderCommand(mRobot.getElevator()));
 
-            secondaryController.getLeftTriggerButton().whileHeld(new ActuateGathererCommand(mRobot.getGatherer(), true));
-            secondaryController.getRightTriggerButton().whileHeld(new ActuateGathererCommand(mRobot.getGatherer(), false));
+                secondaryController.getLeftTriggerButton().whileHeld(new ActuateGathererCommand(mRobot.getGatherer(), true));
+                secondaryController.getRightTriggerButton().whileHeld(new ActuateGathererCommand(mRobot.getGatherer(), false));
 
+            }
         }
+
         // another primaryController
         // another secondaryController
 
