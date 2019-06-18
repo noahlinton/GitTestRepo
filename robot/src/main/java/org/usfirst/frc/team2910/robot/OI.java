@@ -27,11 +27,11 @@ public class OI {
 
         if (true){
 
-        
+
             primaryController.getLeftBumperButton().whenPressed(new SetFieldOrientedCommand(mRobot.getDrivetrain(), false));
             primaryController.getLeftBumperButton().whenReleased(new SetFieldOrientedCommand(mRobot.getDrivetrain(), true));
             primaryController.getStartButton().whenPressed(new ZeroDrivetrainGyroCommand(mRobot.getDrivetrain()));
-
+              //hey there
             primaryController.getAButton().whileHeld(new SoftCubePlaceCommand(mRobot.getDrivetrain(), mRobot.getGatherer(), SOFT_PLACEMENT_VELOCITY, SOFT_PLACEMENT_ACCELERATION));
             primaryController.getBButton().whenPressed(new LaunchCubeCommand(mRobot.getGatherer(), 1, 0.5));
             primaryController.getXButton().whenPressed(new LaunchCubeCommand(mRobot.getGatherer(), 1, 0.75));
