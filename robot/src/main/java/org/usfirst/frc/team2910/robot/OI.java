@@ -1,8 +1,8 @@
 
 /*
 
-  This class is the glue that binds the controls on the physical operator
-  interface to the commands and command groups that allow control of the robot.
+  This class is take inputs from the gamepad controllers and decides
+  which  commands and command groups should be run to control the robot
  
 */
 

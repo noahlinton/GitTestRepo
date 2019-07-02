@@ -1,16 +1,12 @@
 
 /**
- * The VM is configured to automatically run this class, and to call the
- * functions corresponding to each mode, as described in the IterativeRobot
- * documentation. If you change the name of this class or the package after
- * creating this project, you must also update the manifest file in the resource
- * directory.
+ * The roborio runs this file
+ * This file calls all other files used
  */
 
 
 	/**
-	 * This function is run when the robot is first started up and should be
-	 * used for any initialization code.
+	 * This function is run when the robot is first turned on
 	 */
 	@Override
 	public void robotInit() {
@@ -23,30 +19,23 @@
 	}
 
 	/**
-	 * This function is called once each time the robot enters Disabled mode.
-	 * You can use it to reset any subsystem information you want to clear when
-	 * the robot is disabled.
+	 * This function is called once each time the robot enters Disabled mode
 	 */
 	@Override
 	public void disabledInit() {
 		
 	}
 
+	/**
+	 * This function is called periodically during Disabled mode
+	 */
 	@Override
 	public void disabledPeriodic() {
-		Scheduler.getInstance().run();
+
 	}
 
 	/**
-	 * This autonomous (along with the chooser code above) shows how to select
-	 * between different autonomous modes using the dashboard. The sendable
-	 * chooser code works with the Java SmartDashboard. If you prefer the
-	 * LabVIEW Dashboard, remove all of the chooser code and uncomment the
-	 * getString code to get the auto name from the text box below the Gyro
-	 * <p>
-	 * You can add additional auto modes by adding additional commands to the
-	 * chooser code above (like the commented example) or additional comparisons
-	 * to the switch structure below with additional strings & commands.
+	 * This function is called once each time the robot enters Autonomous mode
 	 */
 	@Override
 	public void autonomousInit() {
@@ -55,20 +44,23 @@
 	}
 
 	/**
-	 * This function is called periodically during autonomous
+	 * This function is called periodically during Autonomous mode
 	 */
 	@Override
 	public void autonomousPeriodic() {
 		
 	}
 
+	/**
+	 * This function is called once each time the robot enters Teleop mode
+	 */
 	@Override
 	public void teleopInit() {
 		
 	}
 
 	/**
-	 * This function is called periodically during operator control
+	 * This function is called periodically during Teleop mode
 	 */
 	@Override
 	public void teleopPeriodic() {
@@ -76,7 +68,7 @@
 	}
 
 	/**
-	 * This function is called periodically during test mode
+	 * This function is called periodically during Test mode
 	 */
 	@Override
 	public void testPeriodic() { }
