@@ -1,1 +1,1 @@
-//The robot will look for hatch because our programming team is awesome, alhthough our drive team is awesome at looking for hatches too.  And our scouts, they are all awesome.  ANd our cheering parents.  And our bus driver.  All awesome.
+//eat, sleep, find hatches
