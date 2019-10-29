@@ -13,8 +13,8 @@ import frc.robot.Robot;
 /**
  * An example command.  You can replace me with your own command.
  */
-public class Move extends Command {
-  public Move() {
+public class move extends Command {
+  public move() {
     // Use requires() here to declare subsystem dependencies
     requires(Robot.m_subsystem);
   }
